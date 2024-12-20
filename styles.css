@@ -1,0 +1,102 @@
+/* ベース設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f8ff; /* 冬っぽい淡い青 */
+    background-image: url('https://example.com/snowflakes.png'); /* 雪の背景（適宜画像リンク変更） */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+#quiz-container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明の白背景 */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    border: 2px solid #228b22; /* クリスマスらしい緑の枠線 */
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #b22222; /* 深い赤 */
+    font-family: 'Cursive', sans-serif; /* 装飾的なフォント */
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #b22222; /* 深い赤 */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #8b0000; /* 濃い赤 */
+    transform: scale(1.05); /* ホバーで少し大きく */
+}
+
+.feedback {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Cursive', sans-serif;
+}
+
+.correct {
+    color: #228b22; /* クリスマスらしい緑 */
+}
+
+.incorrect {
+    color: #b22222; /* 深い赤 */
+}
+
+#score-container {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #006400; /* 深い緑 */
+}
+
+#next-button {
+    background-color: #228b22; /* 緑 */
+    color: white;
+}
+
+#next-button:hover {
+    background-color: #006400; /* 濃い緑 */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    #quiz-container {
+        padding: 15px;
+    }
+}
