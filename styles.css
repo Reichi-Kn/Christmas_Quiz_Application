@@ -1,0 +1,87 @@
+/* ベース設定 */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #006400; /* ダークグリーンの背景色でクリスマス風に */
+    padding: 10px;
+}
+
+#quiz-container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #d32f2f; /* クリスマス風の赤色 */
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #d32f2f; /* クリスマス風の赤色 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #b71c1c; /* ボタンの濃い赤色でホバー効果 */
+}
+
+.hide {
+    display: none;
+}
+
+.feedback {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+#score-container {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    #quiz-container {
+        padding: 15px;
+    }
+}
